@@ -1,47 +1,57 @@
 
 @import"variables";
 
+%btn_display_flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 75px;
+  font-family: $font-fam;
+}
 
 .btn {
-    display: flex;
-    height: 47px;
-    width: 152px;
-    border-radius: 75px;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    font-family: $font-fam;
+
+  @extend %btn_display_flex;
+
+  height: 47px;
+  width: 152px;
+  font-size: 17px;  
 }
+
 .btn-sm {
-    display: flex;
-    height: 37.6px;
-    width: 108px;
-    border-radius: 75px;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    font-family: $font-fam;
+
+  @extend %btn_display_flex;
+    
+  height: 37.6px;
+  width: 108px;
+  font-size: 13px;
 }
+
 .btn-big {
-    display: flex;
-    height: 56.4px;
-    width: 182.4px;
-    border-radius: 75px;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    font-family: $font-fam;
+
+  @extend %btn_display_flex;
+
+  height: 56.4px;
+  width: 182.4px;
+  font-size: 17px;
 }
 
 .primary {
-    background: $primary;
-    color: white;
-  }
+  background: $primary;
+  color: white;
+}
+
+.secondary {
+  background: $secondary;
+  color: $primary;
+  border: 1px solid $primary;
+}
 
 .danger {
     background: $danger;
     color: white;
   }
+// Système de colonnes
 // Système de colonnes
 
 .row {
