@@ -1,4 +1,24 @@
+    
 @import"variables";
+
+// card
+@mixin card-vt {
+  width: $cardwidth;
+  height: $cardheight;
+  background: white;
+  border: 1px solid #D5D5D5;
+  border-radius: 10px;
+  font-family: $font-fam;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+}
+
+@mixin card-picture {
+    height: 225px;
+    width: 300px;
+    border-radius: 9px;
+    object-fit: cover;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.432);
+
 
 @mixin button_display {
     display: flex;
