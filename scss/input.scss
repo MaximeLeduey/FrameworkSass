@@ -55,64 +55,65 @@
 
 // card
 
-.card {
-  @include card-vt;
+.card-vt {
+    @include card-vt;
 
-  &__picture img{
-    @include card-picture;
-  }
-  &__content{
-    padding: 20px 18px 29px 25px;
-  }
-  &__title{
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  &__text{
-    font-size: $font-size-text;
-    margin-bottom: 30px;
-  }
+    &__picture img{
+      @include card-picture;
+    }
+    &__content{
+      padding: 20px 18px 29px 25px;
+    }
+    &__title{
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    &__text{
+      font-size: $font-size-text;
+      margin-bottom: 30px;
+    }
 }
 
 //card
-.card{
-  display: flex;
-  width: $card_width;
-  height: $card_heigth;
-  background-color: #FFFF;
-  border-radius: 10px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
-  font-family: $font-fam;
 
-  &_content_img{
-    margin: 0;
-  }
-
-  &_img{
-    width: 200px;
-    height: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  &_info{
+.card-h {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 40px;
+    width: $card_width;
+    height: $card_heigth;
+    background-color: #FFFF;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+    font-family: $font-fam;
+
+    &_content_img{
+      margin: 0;
+    }
+
+    &_img{
+      width: 200px;
+      height: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &_info{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 40px;
+    }
+    &_title{
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    &_text{
+      color: black;
+      font-size: 16px;
+      margin: 20px 0 35px 0;
+    }
   }
-  &_title{
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  &_text{
-    color: black;
-    font-size: 16px;
-    margin: 20px 0 35px 0;
-  }
-}
 
 
 
