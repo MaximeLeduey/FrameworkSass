@@ -4,7 +4,7 @@
   "description": "This is a framework css",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "Framework": "sass --watch ./scss/input.scss:./assets/css/output.css"
   },
   "repository": {
     "type": "git",
