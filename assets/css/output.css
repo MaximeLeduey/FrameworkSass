@@ -1,3 +1,17 @@
+body {
+  margin: 0px 100px;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    margin: 0px 200px;
+  }
+}
 .btn {
   display: flex;
   justify-content: center;
@@ -263,6 +277,46 @@
   color: black;
   font-size: 16px;
   margin: 20px 0 35px 0;
+}
+
+.m1 {
+  margin: 0px 20px;
+}
+
+.m2 {
+  margin: 0px 40px;
+}
+
+.m3 {
+  margin: 0px 60px;
+}
+
+.m4 {
+  margin: 0px 80px;
+}
+
+.m5 {
+  margin: 0px 100px;
+}
+
+.h1 {
+  font-size: 50px;
+}
+
+.h2 {
+  font-size: 40px;
+}
+
+.h3 {
+  font-size: 30px;
+}
+
+.h4 {
+  font-size: 20px;
+}
+
+.align-center {
+  text-align: center;
 }
 
 /*# sourceMappingURL=output.css.map */

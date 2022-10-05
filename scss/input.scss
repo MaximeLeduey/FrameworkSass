@@ -2,7 +2,19 @@
 @import"variables";
 @import"mixins";
 
-
+body {
+  margin: 0px 100px;
+}
+@media screen and (max-width: 576px) {
+  body {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    margin: 0px 200px;
+  }
+}
 
 .btn {
   @include button_display;
@@ -117,6 +129,17 @@
     }
   }
 
+// margin
+
+@include create_margins;
 
 
+// fonts 
 
+@include create_font_size;
+
+// align center
+
+.align-center {
+  text-align: center;
+}

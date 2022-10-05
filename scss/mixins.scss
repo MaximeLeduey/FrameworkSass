@@ -37,3 +37,19 @@
         }
     }
 }
+
+@mixin create_font_size() {
+    @for $i from 1 through 4 {
+        .h#{$i} {
+            font-size: 60 - $i*10px;
+        }
+    }
+}
+
+@mixin create_margins() {
+    @for $i from 1 through 5 {
+        .m#{$i} {
+            margin: 0px 0 + $i * 20px;
+        }
+    }
+}
