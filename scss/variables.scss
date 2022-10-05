@@ -1,19 +1,18 @@
 
-$test : noir ;
-
 // ci-desous les classes boutons
-$primaire : #4297EC ;
+$primary : #4297EC ;
 $danger : #E63A3A ;
-$secondaire : #FFFF ;
-$font-fam : ' Montserrat ' ;
-$font-size-title : 17 px ;
-$font-size-text : 15 px ;
+$secondary : #FFFF ;
+$font-fam : 'Montserrat' ;
+$font-size-title : 17px ;
+$font-size-text : 15px ;
 
 // Système de colonnes
 
 $colsNbr : 12 ;
+$column-gap: 40px;
 
 
 // carte
-$cardwidth : 300 px ;
-$cardheight : 450 px ;
+$cardwidth : 300px;
+$cardheight : 450px;
