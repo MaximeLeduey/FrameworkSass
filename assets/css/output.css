@@ -1,0 +1,44 @@
+.btn {
+  display: flex;
+  height: 47px;
+  width: 152px;
+  border-radius: 75px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-family: "Montserrat";
+}
+
+.btn-sm {
+  display: flex;
+  height: 37.6px;
+  width: 108px;
+  border-radius: 75px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-family: "Montserrat";
+}
+
+.btn-big {
+  display: flex;
+  height: 56.4px;
+  width: 182.4px;
+  border-radius: 75px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-family: "Montserrat";
+}
+
+.primary {
+  background: #4297EC;
+  color: white;
+}
+
+.danger {
+  background: #E63A3A;
+  color: white;
+}
+
+/*# sourceMappingURL=output.css.map */
