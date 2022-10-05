@@ -44,12 +44,13 @@
 .row {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    @include create_classes($sm);
+    column-gap: $column-gap;
+    @include create_classes(sm);
     @media screen and (min-width: 576px){
-      @include create_classes($md);
+      @include create_classes(md);
     }
     @media screen and (min-width: 992px){
-      @include create_classes($lg);
+      @include create_classes(lg);
     }
 }
 
