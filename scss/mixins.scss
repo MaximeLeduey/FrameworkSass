@@ -1,3 +1,6 @@
+    
+@import"variables";
+
 // card
 @mixin card-vt {
   width: $cardwidth;
@@ -15,4 +18,21 @@
     border-radius: 9px;
     object-fit: cover;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.432);
+
+
+@mixin button_display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 75px;
+    font-family: $font-fam;
+}
+
+@mixin create_classes($screen_size) {
+    @for $i from 1 through $colsNbr {
+        .col-#{$screen_size}-#{$i} {
+            grid-column: span $i;
+            background-color: red;
+        }
+    }
 }

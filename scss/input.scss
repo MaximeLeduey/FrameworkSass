@@ -2,36 +2,22 @@
 @import"variables";
 @import"mixins";
 
-%btn_display_flex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 75px;
-  font-family: $font-fam;
-}
-
 .btn {
-
-  @extend %btn_display_flex;
-
+  @include button_display;
   height: 47px;
   width: 152px;
   font-size: 17px;  
 }
 
 .btn-sm {
-
-  @extend %btn_display_flex;
-    
+  @include button_display;
   height: 37.6px;
   width: 108px;
   font-size: 13px;
 }
 
 .btn-big {
-
-  @extend %btn_display_flex;
-
+  @include button_display;
   height: 56.4px;
   width: 182.4px;
   font-size: 17px;
@@ -52,33 +38,19 @@
     background: $danger;
     color: white;
   }
-// Système de colonnes
+
 // Système de colonnes
 
 .row {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    @for $i from 1 through 12 {
-        .col-sm-#{$i} {
-            grid-column: span $i;
-            background-color: red;
-        }
-    }
+    column-gap: $column-gap;
+    @include create_classes(sm);
     @media screen and (min-width: 576px){
-        @for $i from 1 through 12 {
-            .col-md-#{$i} {
-                grid-column: span $i;
-                background-color: red;
-            }
-        }
+      @include create_classes(md);
     }
     @media screen and (min-width: 992px){
-        @for $i from 1 through 12 {
-            .col-lg-#{$i} {
-                grid-column: span $i;
-                background-color: red;
-            }
-        }
+      @include create_classes(lg);
     }
 }
 
@@ -103,3 +75,6 @@
     margin-bottom: 30px;
   }
 }
+
+
+
