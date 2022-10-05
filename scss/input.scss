@@ -1,6 +1,7 @@
 
 @import"variables";
 
+
 .btn {
     display: flex;
     height: 47px;
@@ -43,3 +44,14 @@
   }
 // Système de colonnes
 
+.row {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+@for $i from 1 through 12 {
+    .col-sm-#{$i} {
+        grid-column: span $i;
+        background-color: red;
+    }
+}
