@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "framework": "sass --watch ./scss/input.scss:./assets/css/output.css"
+    "Framework": "sass --watch ./scss/input.scss:./assets/css/output.css"
   },
   "repository": {
     "type": "git",
