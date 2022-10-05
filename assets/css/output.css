@@ -1,24 +1,31 @@
-.btn-big, .btn-sm, .btn {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 75px;
   font-family: "Montserrat";
-}
-
-.btn {
   height: 47px;
   width: 152px;
   font-size: 17px;
 }
 
 .btn-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 75px;
+  font-family: "Montserrat";
   height: 37.6px;
   width: 108px;
   font-size: 13px;
 }
 
 .btn-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 75px;
+  font-family: "Montserrat";
   height: 56.4px;
   width: 182.4px;
   font-size: 17px;
@@ -43,6 +50,7 @@
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  column-gap: 40px;
 }
 .row .col-sm-1 {
   grid-column: span 1;
@@ -227,6 +235,31 @@
   color: black;
   font-size: 16px;
   margin: 20px 0 35px 0;
+  width: 300px;
+  height: 450px;
+  background: white;
+  border: 1px solid #D5D5D5;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+}
+.card__picture img {
+  height: 225px;
+  width: 300px;
+  border-radius: 9px;
+  object-fit: cover;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.432);
+}
+.card__content {
+  padding: 20px 18px 29px 25px;
+}
+.card__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.card__text {
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=output.css.map */
