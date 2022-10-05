@@ -1,5 +1,6 @@
 
 @import"variables";
+@import"mixins";
 
 %btn_display_flex{
   display: flex;
@@ -81,6 +82,24 @@
     }
 }
 
+// card
 
+.card {
+  @include card-vt;
 
-
+  &__picture img{
+    @include card-picture;
+  }
+  &__content{
+    padding: 20px 18px 29px 25px;
+  }
+  &__title{
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+  }
+  &__text{
+    font-size: $font-size-text;
+    margin-bottom: 30px;
+  }
+}
