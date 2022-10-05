@@ -202,6 +202,39 @@
 }
 
 .card {
+  display: flex;
+  width: 500px;
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+  font-family: "Montserrat";
+}
+.card_content_img {
+  margin: 0;
+}
+.card_img {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+.card_info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 40px;
+}
+.card_title {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+.card_text {
+  color: black;
+  font-size: 16px;
+  margin: 20px 0 35px 0;
   width: 300px;
   height: 450px;
   background: white;
