@@ -1,2 +1,46 @@
+
+@import"variables";
+
+.btn {
+    display: flex;
+    height: 47px;
+    width: 152px;
+    border-radius: 75px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: $font-fam;
+}
+.btn-sm {
+    display: flex;
+    height: 37.6px;
+    width: 108px;
+    border-radius: 75px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: $font-fam;
+}
+.btn-big {
+    display: flex;
+    height: 56.4px;
+    width: 182.4px;
+    border-radius: 75px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: $font-fam;
+}
+
+.primary {
+    background: $primary;
+    color: white;
+  }
+
+.danger {
+    background: $danger;
+    color: white;
+  }
+=======
 // Système de colonnes
 
