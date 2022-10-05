@@ -1,0 +1,18 @@
+@import"variables";
+
+@mixin button_display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 75px;
+    font-family: $font-fam;
+}
+
+@mixin create_classes($screen_size) {
+    @for $i from 1 through $colsNbr {
+        .col-#{$screen_size}-#{$i} {
+            grid-column: span $i;
+            background-color: red;
+        }
+    }
+}
