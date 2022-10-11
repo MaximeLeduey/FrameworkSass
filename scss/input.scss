@@ -1,4 +1,3 @@
-
 @import"variables";
 @import"mixins";
 
@@ -91,43 +90,36 @@ body {
 //card
 
 .card-h {
-    display: flex;
-    width: $card_width;
-    height: $card_heigth;
-    background-color: #FFFF;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
-    font-family: $font-fam;
 
-    &_content_img{
-      margin: 0;
-    }
+  @include card-h;
 
-    &_img{
-      width: 200px;
-      height: 250px;
-      border-radius: 10px;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    &_info{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin: 0 40px;
-    }
-    &_title{
-      color: black;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    &_text{
-      color: black;
-      font-size: 16px;
-      margin: 20px 0 35px 0;
-    }
+  &_content_img{
+    margin: 0;
   }
+
+  &_img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &_info{
+    @include flex_info_card;
+    margin: 0 40px;
+  }
+  &_title{
+    font-size: $font-size-title;
+    font-weight: bold;
+  }
+  &_text{
+    color: black;
+    font-size: $font-size-text;
+    margin: 20px 0 35px 0;
+  }
+}
+
 
 // margin
 

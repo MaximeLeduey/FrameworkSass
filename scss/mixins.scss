@@ -2,15 +2,26 @@
 @import"variables";
 
 // card
+@mixin card {
+    background: white;
+    color: black;
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    font-family: $font-fam;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+}
 
 @mixin card-vt {
-  width: $cardwidth;
-  height: $cardheight;
-  background: white;
-  border: 1px solid #D5D5D5;
-  border-radius: 10px;
-  font-family: $font-fam;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+    @include card;
+    width: $cardwidth;
+    height: $cardheight; 
+}
+
+@mixin card-h {
+    @include card;
+    display: flex;
+    width: $card_width;
+    height: $card_heigth;  
 }
 
 @mixin card-picture {
@@ -19,6 +30,12 @@
     border-radius: 9px;
     object-fit: cover;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.432);
+}
+
+@mixin flex_info_card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 @mixin button_display {
