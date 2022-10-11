@@ -65,8 +65,13 @@
 
 @mixin create_margins() {
     @for $i from 1 through 5 {
-        .m#{$i} {
-            margin: 0px 0 + $i * 20px;
+        .mx#{$i} {
+            margin-left: $i * 20px;
+            margin-right: $i * 20px;
+        }
+        .my#{$i} {
+            margin-top: $i * 20px;
+            margin-bottom: $i * 20px;
         }
     }
 }
