@@ -71,17 +71,20 @@ body {
 .card-vt {
     @include card-vt;
 
-    &__picture img{
-      @include card-picture;
+    &_picture{
+      margin: 0;
     }
-    &__content{
+    &_img{
+      @include card-picture-vt;
+    }
+    &_content{
       padding: 20px 18px 29px 25px;
     }
-    &__title{
+    &_title{
       font-weight: bold;
       margin-bottom: 20px;
     }
-    &__text{
+    &_text{
       font-size: $font-size-text;
       margin-bottom: 30px;
     }
@@ -93,19 +96,15 @@ body {
 
   @include card-h;
 
-  &_content_img{
+  &_picture{
     margin: 0;
   }
 
   &_img{
-    width: 200px;
-    height: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
+    @include card-picture-h;
   }
 
-  &_info{
+  &_content{
     @include flex_info_card;
     margin: 0 40px;
   }
@@ -134,4 +133,26 @@ body {
 
 .align-center {
   text-align: center;
+}
+
+// display flex
+.d-flex{
+  @include display-flex;
+
+  &-center{
+    @include display-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-column{
+    @include display-flex;
+    flex-direction: column;
+  }
+
+  &-center{
+    @include display-flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
