@@ -59,7 +59,7 @@
     @for $i from 1 through $colsNbr {
         .col-#{$screen_size}-#{$i} {
             grid-column: span $i;
-            background-color: red;
+            background-color: rgb(255, 255, 255);
         }
     }
 }
@@ -85,11 +85,6 @@
     }
 }
 
-<<<<<<< Updated upstream
 @mixin display-flex{
     display: flex;
-=======
-@mixin display_flex() {
-    
->>>>>>> Stashed changes
 }
